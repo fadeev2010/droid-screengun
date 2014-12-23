@@ -2,3 +2,10 @@ internet.ya.ru internet.ya.ru.jpg
 google.com google.com.jpg
 planiro.com planiro.com.jpg
 mail.ru mail.ru.jpg
+cityads.com/ru/ cityads.jpg
+kma.biz/ kma.jpg
+www.admitad.com/ admitad.jpg 
+actionads.com/ actionads.jpg
+advertstar.ru/ advertstar.jpg
+adinfo.ru/ adinfo.jpg
+shakes.pro/index.php?r=user/login shakes.jpg

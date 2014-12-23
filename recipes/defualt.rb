@@ -1,5 +1,5 @@
  
-['gnome-core', 'xfce4', 'firefox', 'vnc4server', 'xdotool'].each do |pkg|
+['gnome-core', 'xfce4', 'firefox', 'vnc4server', 'xdotool', 'wmctrl'].each do |pkg|
   package pkg
 end
 
