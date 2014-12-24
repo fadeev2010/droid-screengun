@@ -14,7 +14,7 @@ package "google-chrome-#{node['chrome']['track']}" do
 end.run_action(:install)
 
 # Install component for screengun
-['gnome-core', 'xfce4', 'vnc4server'].each do |pkg|
+['gnome-core', 'xfce4', 'vnc4server', 'imagemagick'].each do |pkg|
   package pkg
 end
 
