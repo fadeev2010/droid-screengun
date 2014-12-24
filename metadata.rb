@@ -5,3 +5,5 @@ version '0.0.4'
 
 supports 'ubuntu'
 depends 'imagemagick'
+
+suggests 'apt', '~> 2.3'
