@@ -18,13 +18,18 @@ end.run_action(:install)
   package pkg
 end
 
-["#{node['screengun']['install_path']}", "#{node['screengun']['image']}"].each do |dir_create|
-  directory "#{dir_create}" do
-    owner node['screengun']['user']
-    group node['screengun']['user']
-    mode '0770'
-    action :create
-  end
+directory "#{node['screengun']['install_path']}" do
+  owner node['screengun']['user']
+  group node['screengun']['user']
+  mode '0770'
+  action :create
+end
+
+directory "#{node['screengun']['image']}" do
+  owner node['screengun']['user']
+  group node['screengun']['user']
+  mode '0770'
+  action :create
 end
 
 template "#{node['screengun']['install_path']}/screengun.sh" do
