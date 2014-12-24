@@ -19,7 +19,7 @@ end.run_action(:install)
 end
 
 ["#{node['screengun']['install_path']}", "#{node['screengun']['image']}"].each do |dir_create|
-  directory dir_create do
+  directory "#{dir_create}" do
     owner node['screengun']['user']
     group node['screengun']['user']
     mode '0770'
