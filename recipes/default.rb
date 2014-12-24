@@ -29,6 +29,8 @@ end
 
 template "#{node['screengun']['install_path']}/screengun.sh" do
   source 'screengun.sh.erb'
+  owner node['screengun']['user']
+  group node['screengun']['user']
   mode '0770'
   variables(
      path: node['screengun']['image_path']
@@ -39,4 +41,5 @@ template "#{node['screengun']['install_path']}/url_list.txt" do
   source 'url_list.txt.erb'
   owner node['screengun']['user']
   group node['screengun']['user']
+  mode '0660'
 end
