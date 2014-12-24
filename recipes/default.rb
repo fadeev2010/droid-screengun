@@ -28,7 +28,7 @@ end
 end
 
 template "#{node['screengun']['install_path']}/screengun.sh" do
-  source 'screengun.sh'
+  source 'screengun.sh.erb'
   mode '0770'
   variables(
      path: node['screengun']['image_path']
