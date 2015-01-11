@@ -37,7 +37,7 @@ template "#{node['screengun']['install_path']}/screengun.sh" do
   )
 end
 
-template "#{node['screengun']['install_path']}/url_list.txt" do
+template "#{node['screengun']['install_path']}/screenshot_list" do
   source 'url_list.txt.erb'
   owner node['screengun']['user']
   group node['screengun']['user']
