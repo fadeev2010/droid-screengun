@@ -22,7 +22,7 @@ end
   directory "#{dir_create}" do
     owner node['screengun']['user']
     group node['screengun']['user']
-    mode '0770'
+    mode '0771'
     action :create
   end
 end
