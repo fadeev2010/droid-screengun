@@ -15,7 +15,7 @@ do
     killall chrome
     sleep 1
     
-done < screenshot_list
+done < <%= @install_path %>/screenshot_list
 
 ## clean up when done
 vncserver -kill :11
