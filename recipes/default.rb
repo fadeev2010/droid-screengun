@@ -33,7 +33,7 @@ template "#{node['screengun']['install_path']}/screengun.sh" do
   group node['screengun']['user']
   mode '0770'
   variables(
-     path: node['screengun']['image_path']
+     path: node['screengun']['image_path'],
      install_path: node['screengun']['install_path']
   )
 end
