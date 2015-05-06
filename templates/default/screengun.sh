@@ -13,7 +13,9 @@ then
   while read url name
   do
       export DISPLAY=:11
-      google-chrome --window-size=1282,2056 --window-position=0,0 --user-data-dir=stage-profile --kiosk --app=$url > /dev/null 2> /dev/null &
+      google-chrome --disable-translate --window-size=1282,2056 \
+      --window-position=0,0 --lang=en --country=US --user-data-dir=stage-profile \
+      --kiosk --app=$url > /dev/null 2> /dev/null &  
   
       sleep 3
       import -display :11 -window root ../../screenshots/$name
