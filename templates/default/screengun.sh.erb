@@ -7,13 +7,13 @@ then
   # echo "The File has some data." 
 
   #server with a specific DISPLAY
-  vncserver :11 -geometry 1280x4556
+  vncserver :11 -geometry 1280x8556
   
   ## read URLs from a data file in a loop
   while read url name
   do
       export DISPLAY=:11
-      google-chrome --disable-translate --window-size=1282,4552 --window-position=0,0 --lang=ru --country=RU --user-data-dir=stage-profile --kiosk --app=$url > /dev/null 2> /dev/null &  
+      google-chrome --disable-translate --window-size=1282,8552 --window-position=0,0 --lang=ru --country=RU --user-data-dir=stage-profile --kiosk --app=$url > /dev/null 2> /dev/null &  
   
       sleep 3
       import -display :11 -window root <%= @path %>/$name
