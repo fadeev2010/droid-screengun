@@ -6,8 +6,8 @@
 screenshot_list - файл по умолчанию. В файле указать список адресов сайтов, через пробел название файла в котором сохранить скриншот.
 
 Пример:
-http://mail.ru mail1.jpg
-https://google.com go2332.jpg
+- http://mail.ru mail1.jpg
+- https://google.com go2332.jpg
 
 При первом запуске, руками запустить скрипт screengun.sh и задать пароль для псевдо терминала.
 
@@ -16,3 +16,4 @@ https://google.com go2332.jpg
  - gnome-core
  - xfce4
  - vnc4server
+ - google chrome
